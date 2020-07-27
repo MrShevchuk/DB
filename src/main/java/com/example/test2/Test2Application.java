@@ -18,12 +18,12 @@ public class Test2Application {
 		SpringApplication.run(Test2Application.class, args);
 	}
 
-	@EventListener(ApplicationReadyEvent.class)
-
-
-	public void onStart() {
-		User user = userService.saveNewUser("efwgwegw", "ewfwfwef", "dwfefwe");
-		User userFromDB = userService.getUserEmeil("wfwefw");
-		System.out.println();
-	}
+//	@EventListener(ApplicationReadyEvent.class)
+//
+//
+//	public void onStart() {
+//		User user = userService.saveNewUser("efwgwegw", "ewfwfwef", "dwfefwe");
+//		User userFromDB = userService.getUserEmeil("wfwefw");
+//		System.out.println();
+//	}
 }

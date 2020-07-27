@@ -16,7 +16,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     @Override
     List<User> findAll();
 
-    User findByEmail(String email);
+    User findByEmail (String email);
 
     @Query("select u from User u where u.creationDate between :startDate and :endDate")
     Stream<User> findUsersByPeriod(@Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);
